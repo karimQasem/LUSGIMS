@@ -1,0 +1,18 @@
+@import "primeicons/primeicons.css";
+@import "primevue/resources/primevue.min.css";
+@import "primevue/resources/themes/viva-light/theme.css";
+@tailwind base;
+@layer base {
+    button,
+    [type="button"] {
+        /* ... */
+    }
+}
+@tailwind components;
+@tailwind utilities;
+.p-inputnumber-input {
+    padding-left: 2.5rem;
+}
+.p-toast .p-toast-message .p-toast-message-content {
+    border-width: 0 0 0 0px;
+}

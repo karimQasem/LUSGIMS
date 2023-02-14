@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["resources/js/*"]
+        },
+
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true, // Enable strict type-checking options
+        "skipLibCheck": true, // Skip type checking of declaration files
+        "allowJs": true /* Allow javascript files to be compiled. */,
+        "noImplicitAny": false,
+        "types": ["vite/client"],
+        "jsx": "preserve",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "lib": ["esnext", "dom"],
+        "plugins": [
+            {
+                "name": "@vuedx/typescript-plugin-vue"
+            }
+        ]
+    },
+    "include": [
+        "resources/js/**/*.ts",
+        "resources/js/**/*.d.ts",
+        "resources/js/**/*.vue",
+        "resources/js/ziggy.js",
+        "resources/js/shims-window.d.xx"
+    ],
+    "exclude": ["node_modules", "public"]
+}
